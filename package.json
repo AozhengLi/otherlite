@@ -1,0 +1,43 @@
+{
+  "author": "otherlite@gmail.com",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "学习总结",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "stylelint": "^13.6.1",
+    "vuepress": "^1.5.2"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "otherlite",
+  "private": false,
+  "repository": "git@github.com:otherlite/otherlite.git",
+  "version": "0.0.1"
+}

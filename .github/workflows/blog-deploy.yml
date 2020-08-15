@@ -1,0 +1,19 @@
+
+name: blog deploy
+on:
+  push:
+    branches: [ master ]
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@master
+        - name: Deploy
+          uses: jenkey2011/vuepress-deploy@master
+          env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            TARGET_REPO: otherlite/otherlite.github.io
+            TARGET_BRANCH: master
+            BUILD_SCRIPT: yarn --frozen-lockfile && yarn build
+            BUILD_DIR: docs/.vuepress/dist/
