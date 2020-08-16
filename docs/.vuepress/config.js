@@ -3,15 +3,21 @@ module.exports = {
     theme: 'reco',
     title: 'otherlite',
     base: '/',
+    markdown: {
+        anchor: {
+            slugify: require('transliteration').slugify
+        }
+    },
     head: [
         ['link', { rel: 'icon', href: '/logo.ico', type: "image/x-icon" }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
-
     themeConfig: {
         modePicker: false, // 不显示模式调节按钮
         searchMaxSuggestions: 5, // 最大搜索显示数量
+        activeHeaderLinks: false,
         sidebar: 'auto',
+        sidebarDepth: 3,
         logo: '/logo.png',
 
         vssueConfig: {

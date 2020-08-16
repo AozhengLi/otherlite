@@ -12,12 +12,13 @@
   },
   "description": "学习总结",
   "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-conventional": "^9.1.1",
-    "commitizen": "^4.1.2",
-    "husky": "^4.2.5",
-    "vuepress": "^1.5.2",
-    "vuepress-theme-reco": "^1.5.5"
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
+    "commitizen": "4.1.2",
+    "husky": "4.2.5",
+    "transliteration": "^2.1.11",
+    "vuepress": "1.5.1",
+    "vuepress-theme-reco": "1.5.3"
   },
   "scripts": {
     "commit": "git-cz",
